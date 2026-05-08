@@ -1,0 +1,14 @@
+SQL Injection CTF Project (PortSwigger Lab)
+OBJECTIVE:-To understand and exploit SQL Injection vulnerability in a web application.
+TOOLS USED:- Burp Suite
+           - Browser (PortSwigger Web Security Academy)
+VULNERABILITY:-SQL Injection in WHERE clause
+PAYLOAD USED:-Gifts' OR 1=1--
+STEPS PERFORMED:-1. Opened PortSwigger lab 
+                 2. Selected category filter (Gifts)
+                 3. Intercepted request using Burp Suite
+                 4. Modified category parameter with SQL injection payload
+                 5. Forwarded request
+                 6. Observed hidden products
+                 7. Lab marked as solved
+RESULT:-The injection bypassed the SQL filter and revealed all products from the database.
